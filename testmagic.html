@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+   
+    
+
+
 </head>
 
 <body id="top">
@@ -48,6 +52,9 @@
                                     <li><a data-hover="COLLECTION" href="#about"><span>經典鞋款</span></a></li>
                                     <li><a data-hover="OTTD" href="#portfolio"><span>時尚穿搭</span></a></li>
                                     <li><a data-hover="STORE" href="#contact"><span>門市資訊</span></a></li>
+                                    <li><a href="https://www.facebook.com/skechersshow" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/skecherstw/?r=nametag" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>   
+                                   
                                 </ul>
                             </nav>
                         </div>
@@ -72,6 +79,8 @@
     
     </section>
     <!-- slider area end -->
+
+   
 
     <!--gallery area1 start-->
     <section id="about" class="slider-area parallax" data-speed="3" data-bg-image="assets/img/bg/galleryphoto1.jpg">
@@ -120,9 +129,9 @@
 <!--video section start-->
  <section id="portfolio" class="slider-area parallax" data-speed="3" data-bg-image="assets/img/bg/videoframe.jpg">
     <div class="container">
-        <div class="">
+        
         <div class="videoimport">
-        <div class="iframe-container"> <iframe width="728" height="326" src="https://www.youtube.com/embed/eAvvk-dNasI"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="iframe-container"> <iframe width="628" height="326" src="https://www.youtube.com/embed/eAvvk-dNasI"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
        <h1></h1>
         <p></p>
@@ -132,34 +141,44 @@
     </section>
 
 
-    <!--video section end-->
-
-
-
-
-
- <!-- footer area start -->
-    <footer>
-        <div class="footer-area bg-gray">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-sm-4">
-                    
-                    </div>
-                    <div class="col-md-6 col-sm-8">
-                        <div class="copyright">
-                            <p>@Copyright By <span>SKECHERS TW</span></p>
-                        </div>
-                    </div>
-                </div>
-                <!--go to top btn-->
-                <div class="go-to-top">
-                    <a href="#top"><i class="fa fa-angle-up fa-2x"></i></a>
-                </div>
+<!--video section end-->
+<!--location section start-->
+   <section id="contact" class="slider-area parallax" data-speed="3" data-bg-image="assets/img/bg/locationinfo.jpg">
+          <div class="container">
+            <div class="slider-content">
+          
             </div>
         </div>
-    </footer>
-    <!-- footer area end -->
+           </div>
+    </section>
+<!--location section end--> 
+
+<!--gototop btn start-->
+    <div>
+    <a href="#" id="scroll" style="display: none;" ><p>TOP</p></a></div>
+ 
+      
+
+<!--gototop btn end-->
+
+
+ <!--Footer-->
+<footer class="bgdefault padding_half" style="background-color: black;padding:10px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+           <div class="flogo">
+            <a href="https://www.skechers-twn.com/zh-tw/home" target="_blank"><img src="assets/img/icon/flogo.png">
+           </div>
+                <p class="whitecolor top30 wow fadeInUp">Copyright &copy; 2020 SKECHERS TW. all rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer ends-->
+
+
+
     <!-- jquery latest version -->
     <script src="assets/js/vendor/jquery-3.2.0.min.js"></script>
     <!-- bootstrap 4 js -->
@@ -171,6 +190,28 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <!--slider js-->
+   
+
+<script>
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+
+
 </body>
 
 </html>
